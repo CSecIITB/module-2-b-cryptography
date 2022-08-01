@@ -95,16 +95,18 @@ You can refer to the following link for a "cheat-sheet" of sorts: https://drive.
 ## RSA
 Ah, the star scheme of this week. The acronym "RSA" comes from the surnames of Ron Rivest, Adi Shamir and Leonard Adleman, who described the algorithm in 1977 (it's licensing has an interesting history, view https://www.computerworld.com/article/2588444/rsa-encryption-patent-released.html). **RSA** is a public-key cryptosystem that is used for secure data transmission. It is also one of the oldest.
 
-You can refer to the following link for a short summary on RSA : https://drive.google.com/file/d/1-b-v0p2JQWum2Huk2Hp-UADEZ3D9MNOB/view?usp=sharing
-
+Due to the incredible popularity of RSA, you can find hundreds of resources to study it online! However, so as to not get overwhelmed,
+you can refer to the following link for a short summary on RSA : https://drive.google.com/file/d/1-b-v0p2JQWum2Huk2Hp-UADEZ3D9MNOB/view?usp=sharing
 
 
 One of the flaws that you might feel is present in RSA is that given n, we would just "factor" it to get p (hence q)! The truth is,
 however factoring algorithms are SLOW. Given no specific property of n, the faster algorithm is Shor's algorithm which is a quantum 
 algorithm. However, if n satisfies certain special properties (which varies with factoring algorithm), it can be factored very fast.
 So if you're reluctant, your best bet is to just spam all the factoring algorithms and hope one of them works! <br />
+
 To get a good summary, check out https://stackoverflow.com/questions/2267146/what-is-the-fastest-integer-factorization-algorithm <br />
-You will find many different attacks on RSA which also exploit e or ciphertext given certain cases. <br />
+
+You will find many different attacks on RSA which also exploit e or ciphertext given certain cases.
 To get a good list of attacks, check out https://github.com/RsaCtfTool/RsaCtfTool <br />
 
 However, in actual practise, the key sizes are 2,048 to 4,096 bit, refer https://crypto.stackexchange.com/questions/27575/why-isnt-a-table-used-to-solve-the-large-number-factoring-problem .
