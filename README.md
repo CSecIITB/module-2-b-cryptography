@@ -81,28 +81,22 @@ So to encrypt every new message requires a new key of the same length.
 - https://www.hypr.com/one-time-pad/
 
 # Number Theory
-Refer to the following link for a "cheat-sheet" of sorts: https://docs.google.com/document/d/1JZ2CAi6zfqTr-vIw1voUYhbvDNhK3RNF/edit?usp=sharing&ouid=108053057768377721012&rtpof=true&sd=true <br /> 
+Unlike the (mostly) continuous math you must've studied during your JEE preparations / courses here at IIT Bombay, cryptography uses a lot of discrete math. For this week's content, you must be familiar with some number theory (modular theory) to understand RSA. 
+
+You can refer to the following link for a "cheat-sheet" of sorts: https://drive.google.com/file/d/1X_eIBpjRonnC216WJ2GfY6yl87u7VqVQ/view?usp=sharing <br /> 
 
 **Text Guides:**
 - https://www.nku.edu/~christensen/the%20mathematics%20of%20the%20RSA%20cryptosystem.pdf
 
 
 # RSA
-Ah, the star scheme of this week. **RSA** (Rivest–Shamir–Adleman) is a public-key cryptosystem that is widely used for secure data transmission. It is also one of the oldest. The acronym "RSA" comes from the surnames of Ron Rivest, Adi Shamir and Leonard Adleman, who publicly described the algorithm in 1977. There are so many resouces to learn it,but here's a small summary of the RSA scheme : 
+Ah, the star scheme of this week. The acronym "RSA" comes from the surnames of Ron Rivest, Adi Shamir and Leonard Adleman, who described the algorithm in 1977 (it's licensing has an interesting history, view https://www.computerworld.com/article/2588444/rsa-encryption-patent-released.html). **RSA** is a public-key cryptosystem that is used for secure data transmission. It is also one of the oldest.
 
-1. Select 2 prime numbers,say p and q.
-2. Now take n=p\*q
-3. Calculate the totient function Φ(n)=(p-1)\*(q-1)
-4. Choose value of e such that 1<e<Φ(n) and gcd(Φ(n),e)=1.
-5. Now,calculate d such that (e\*d) mod Φ(n)=1.
-6. Public Key=(e,n); Private Key=(d,n)
+You can refer to the following link for a short summary on RSA : https://drive.google.com/file/d/1-b-v0p2JQWum2Huk2Hp-UADEZ3D9MNOB/view?usp=sharing
 
-Suppose we wanna encrypt a message M. <br />
-C = M^e mod n <br />
-Now decryption will be in similar manner but using private key <br />
-M = C^d mod n <br />
 
-One of the flaws that you might feel is present in RSA is that given n, we would just "factor" it to get p,q! The truth is,
+
+One of the flaws that you might feel is present in RSA is that given n, we would just "factor" it to get p (hence q)! The truth is,
 however factoring algorithms are SLOW. Given no specific property of n, the faster algorithm is Shor's algorithm which is a quantum 
 algorithm. However, if n satisfies certain special properties (which varies with factoring algorithm), it can be factored very fast.
 So if you're reluctant, your best bet is to just spam all the factoring algorithms and hope one of them works! <br />
@@ -112,18 +106,19 @@ To get a good list of attacks, check out https://github.com/RsaCtfTool/RsaCtfToo
 
 However, in actual practise, the key sizes are 2,048 to 4,096 bit, refer https://crypto.stackexchange.com/questions/27575/why-isnt-a-table-used-to-solve-the-large-number-factoring-problem .
 
-eg. you can see the public key of the website you're browsing in it's certificate.
+For example, you can view the public key of the website you're browsing in it's certificate.
+
 **Text Guides:**
-- https://www.di-mgt.com.au/rsa_alg.html#encryption
+- https://www.di-mgt.com.au/rsa_alg.html
 
 **Video Guides:**
 - https://youtu.be/JD72Ry60eP4 (there are many videos on RSA and other schemes on computerphile)
 
-**Practise:**
+# Practise:
 - https://cryptohack.org/challenges/
 - https://cryptopals.com/
 - https://play.picoctf.org/
 - https://ctflearn.com/
 
-**Cryptography walkthroughs:**
+# Cryptography walkthroughs:
 - https://www.youtube.com/playlist?list=PL1H1sBF1VAKU05UWhDDwl38CV4CIk7RLJ 
