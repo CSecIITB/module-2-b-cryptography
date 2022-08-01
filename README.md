@@ -80,8 +80,11 @@ So to encrypt every new message requires a new key of the same length.
 **Text Guides:**
 - https://www.hypr.com/one-time-pad/
 
-# Number Theory
-Unlike the (mostly) continuous math you must've studied during your JEE preparations / courses here at IIT Bombay, cryptography uses a lot of discrete math. For this week's content, you must be familiar with some number theory (modular theory) to understand RSA. 
+## Number Theory
+Unlike the (mostly) continuous math/analysis you must've studied during your JEE preparations / courses here at IIT Bombay, cryptography uses a lot of discrete math. For this week's content, you must be familiar with some number theory (modular theory) to understand RSA. 
+
+![meme2](https://user-images.githubusercontent.com/99350017/182219500-811091d4-fd4a-46f4-b58f-302d08e3cf55.jpeg)
+
 
 You can refer to the following link for a "cheat-sheet" of sorts: https://drive.google.com/file/d/1X_eIBpjRonnC216WJ2GfY6yl87u7VqVQ/view?usp=sharing <br /> 
 
@@ -89,7 +92,7 @@ You can refer to the following link for a "cheat-sheet" of sorts: https://drive.
 - https://www.nku.edu/~christensen/the%20mathematics%20of%20the%20RSA%20cryptosystem.pdf
 
 
-# RSA
+## RSA
 Ah, the star scheme of this week. The acronym "RSA" comes from the surnames of Ron Rivest, Adi Shamir and Leonard Adleman, who described the algorithm in 1977 (it's licensing has an interesting history, view https://www.computerworld.com/article/2588444/rsa-encryption-patent-released.html). **RSA** is a public-key cryptosystem that is used for secure data transmission. It is also one of the oldest.
 
 You can refer to the following link for a short summary on RSA : https://drive.google.com/file/d/1-b-v0p2JQWum2Huk2Hp-UADEZ3D9MNOB/view?usp=sharing
@@ -114,11 +117,11 @@ For example, you can view the public key of the website you're browsing in it's 
 **Video Guides:**
 - https://youtu.be/JD72Ry60eP4 (there are many videos on RSA and other schemes on computerphile)
 
-# Practise:
+## Practise:
 - https://cryptohack.org/challenges/
 - https://cryptopals.com/
 - https://play.picoctf.org/
 - https://ctflearn.com/
 
-# Cryptography walkthroughs:
+## Cryptography walkthroughs:
 - https://www.youtube.com/playlist?list=PL1H1sBF1VAKU05UWhDDwl38CV4CIk7RLJ 
