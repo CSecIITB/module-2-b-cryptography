@@ -1,12 +1,46 @@
 # Module-2 Part-2 (Introduction to Modern Cryptography)
+Welcome back to the Year of Security! This is Week 2 of Module 2 : Modern Cryptography.
+
+Week 1 covered classical ciphers and different types of encodings (which, as stated, is not a cipher but very useful 
+for describing data in different ways, specifically integers which can be then utilised in other encryption schemes). 
+However, now you enter the realm of
+modern cryptography. The schemes usually involve a series of mathematical steps to encrypt the data using key (or keys) to get
+the ciphertext, which once received by the receiver, would have to go through another set of mathematical steps to get the data using same or 
+different key 
+depending on what type of
+algorithm was used. (see https://en.wikipedia.org/wiki/Symmetric-key_algorithm and https://en.wikipedia.org/wiki/Public-key_cryptography).
+
+One question comes to mind, how are these safe? After all, these are based on mathematics, and problems in mathematics get solved all the 
+time!
+
+![meme](https://i.imgflip.com/6okkmq.jpg)
+
+
+Trying to formulate an attack for the scheme will often result in a compute-intensive problem. Of course, given enough computation power 
+and time, you can technically break all the algorithms. 
+However, there are many cases that the data can be found fast and in an appreciable time, mostly owing to people chosing 
+vulnerable numbers.
+So yes, given any compute-intensive problem, you can even frame your own scheme!
+
+![example](https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Public_key_shared_secret.svg/375px-Public_key_shared_secret.svg.png)
+
+(example of Diffie–Hellman key exchange, one of the first public-key protocols)
 
 ## XOR
+During any programming course, you must've come through the following logical operators:AND(&&),OR(||) and NOT(!). Note that these operators
+worked with groups of bytes and gave a boolean output.
+
+![truth table](https://introcs.cs.princeton.edu/java/71boolean/images/truth-table.png)
+
+Now, there is something called 'bitwise operators' which work on the bits within the byte. The calculation performed on bits is just like that
+of logical operators. They take inputs as an integer and return an integer. These are AND &`OR(|), XOR(^), left shift(<<), right shift(>>) and
+one's complement or NOT(~).
 XOR is basically a bitwise operator.It takes two numbers as operands and does XOR on every bit of two numbers. The result of XOR is 1 if the two bits are different and 0 if they are same. <br />
 0 ⊕ 0 = 0 <br />
 1 ⊕ 0 = 1 <br />
 0 ⊕ 1 = 1 <br />
 1 ⊕ 1 = 0 <br />
-**Example:** 73 ⊕ 87 = 1001001 ⊕ 1010111= 0011110 = 30 <br />
+**Example:** 73 ⊕ 87 = (1001001)<sub>2</sub> ⊕ (1010111)<sub>2</sub>= (0011110)<sub>2</sub> = 30 <br />
 
 <details>
 <summary> <strong>EXERCISE:</strong> Given an array find out the only element that occurs exactly once if every element other than the unique element occurs twice. </summary>
