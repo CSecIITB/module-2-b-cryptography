@@ -29,7 +29,7 @@ So yes, given any compute-intensive problem, you can even frame your own scheme!
 (example of Diffie–Hellman key exchange, one of the first public-key protocols)
 
 ## XOR
-During any programming course, you must've come through the following logical operators:(using C++ synthax)<br/>
+During any programming course, you must've come through the following logical operators (using C++ synthax):<br/>
 - AND `a && b`
 - OR `a || b` 
 - NOT `!a`
@@ -100,7 +100,7 @@ you can refer to the following link for a short summary on RSA : https://drive.g
 
 
 One of the flaws that you might feel is present in RSA is that given n, we would just "factor" it to get p (hence q)! The truth is,
-however factoring algorithms are SLOW. Given no specific property of n, the faster algorithm is Shor's algorithm which is a quantum 
+however factoring algorithms are SLOW. Given no specific property of n, the asymptotically fastest algorithm is Shor's algorithm which is a quantum 
 algorithm. However, if n satisfies certain special properties (which varies with factoring algorithm), it can be factored very fast.
 So if you're reluctant, your best bet is to just spam all the factoring algorithms and hope one of them works! <br />
 
@@ -109,9 +109,9 @@ To get a good summary, check out https://stackoverflow.com/questions/2267146/wha
 You will find many different attacks on RSA which also exploit e or ciphertext given certain cases.
 To get a good list of attacks, check out https://github.com/RsaCtfTool/RsaCtfTool <br />
 
-However, in actual practise, the key sizes are 2,048 to 4,096 bit, refer https://crypto.stackexchange.com/questions/27575/why-isnt-a-table-used-to-solve-the-large-number-factoring-problem .
+However, in actual practice, the key sizes are 2048 to 4096 bits, refer https://crypto.stackexchange.com/questions/27575/why-isnt-a-table-used-to-solve-the-large-number-factoring-problem .
 
-For example, you can view the public key of the website you're browsing in it's certificate.
+For example, you can view the public key of the website you're browsing in its certificate.
 
 **Text Guides:**
 - https://www.di-mgt.com.au/rsa_alg.html
@@ -119,7 +119,7 @@ For example, you can view the public key of the website you're browsing in it's 
 **Video Guides:**
 - https://youtu.be/JD72Ry60eP4 (there are many videos on RSA and other schemes on computerphile)
 
-## Practise:
+## Practice:
 - https://cryptohack.org/challenges/
 - https://cryptopals.com/
 - https://play.picoctf.org/
