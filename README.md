@@ -128,3 +128,18 @@ For example, you can view the public key of the website you're browsing in its c
 
 ## Cryptography walkthroughs:
 - https://www.youtube.com/playlist?list=PL1H1sBF1VAKU05UWhDDwl38CV4CIk7RLJ 
+
+
+
+# Challenges
+
+We have another 2 challenges lined up for you this time:
+
+1. [RSA-ddler](Challenges/RSA-ddler)
+2. [gif-friend](Challenges/gif-friend)
+
+All in all, you would need to solve **atleast 2 challenges throughtout the module** but we encourage that you solve all of these, for things are more fun that way 😊.
+Make sure you go through the respective `README.md` files before jumping into the challenge. Have fun! 😁
+
+Discussions among mentees are encouraged and we request you to use our [Discord Server](https://discord.gg/nnpCPsUrYV) for the same.
+<p align="center">Created with :heart: by <a href="https://linktr.ee/csec.iitb">CSec</a></p>
